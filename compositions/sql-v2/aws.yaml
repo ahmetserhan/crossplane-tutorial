@@ -184,7 +184,7 @@ spec:
             matchControllerRef: true
           vpcSecurityGroupIdSelector:
             matchControllerRef: true
-          instanceClass: db.m5.large
+          instanceClass: db.t3.micro
           username: masteruser
           engine: postgres
           engineVersion: "15.3"

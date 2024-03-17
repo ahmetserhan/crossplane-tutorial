@@ -66,15 +66,14 @@ HYPERSCALER="aws"
 
 echo "export HYPERSCALER=$HYPERSCALER" >> .env
 
-AWS_ACCESS_KEY_ID="ASIAQKD5A2KFDUBY6L67"
+AWS_ACCESS_KEY_ID="AKIAZQ3DUW6DNPOZV2W2"
 echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> .env
 
-AWS_SECRET_ACCESS_KEY="uhmT5NcbYNaF4w97ewPNvrUxAX/D72Y5yc5xxHDD"
+AWS_SECRET_ACCESS_KEY="PndKfXZuiXknkR+QOU8gIK4FEWfnkjqZlAp2Sw8m"
 echo "export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" >> .env
 
-AWS_ACCOUNT_ID="021737034378"
+AWS_ACCOUNT_ID="654654617478"
 echo "export AWS_ACCOUNT_ID=$AWS_ACCOUNT_ID" >> .env
-
 
 echo "[default]
 aws_access_key_id = $AWS_ACCESS_KEY_ID
@@ -103,4 +102,3 @@ helm upgrade --install argocd argo-cd \
     --values argocd/helm-values.yaml --wait
 
 kubectl apply --filename argocd/apps.yaml
-

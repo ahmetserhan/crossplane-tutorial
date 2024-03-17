@@ -204,13 +204,13 @@ spec:
           vpcSecurityGroupIdSelector:
             matchLabels:
               crossplane.io/composite: my-db
-          instanceClass: db.m5.large
+          instanceClass: db.t3.micro
           username: masteruser
           engine: postgres
           engineVersion: "15.3"
           skipFinalSnapshot: true
           publiclyAccessible: true
-          allocatedStorage: 200
+          allocatedStorage: 20
           passwordSecretRef:
             namespace: crossplane-system
             key: password

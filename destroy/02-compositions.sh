@@ -1,10 +1,14 @@
-#!/bin/sh
+#!/usr/bin/env nix-shell
+#! nix-shell -i bash
+#! nix-shell -p gum kind kubectl yq google-cloud-sdk awscli2 eksctl azure-cli
+
 set -e
 
 gum style \
-	--foreground 212 --border-foreground 212 --border double \
-	--margin "1 2" --padding "2 4" \
-	'Destruction of the Compositions chapter'
+        --foreground 212 --border-foreground 212 --border double \
+        --margin "1 2" --padding "2 4" \
+        'Setup for the Managed Resources chapter.
+  
 
 gum confirm '
 Are you ready to start?
