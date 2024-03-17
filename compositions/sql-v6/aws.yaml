@@ -290,7 +290,7 @@ spec:
       transforms:
       - type: map
         map:
-          small: db.m5.large
+          small: db.t3.micro
           medium: db.m5.2xlarge
           large: db.m5.8xlarge
     - fromFieldPath: spec.parameters.version
